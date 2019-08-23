@@ -1,0 +1,4 @@
+FROM ruby:alpine3.10
+RUN apk add ruby
+COPY helloworld.rb /
+CMD ruby helloworld.rb

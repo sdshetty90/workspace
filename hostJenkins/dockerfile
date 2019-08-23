@@ -1,2 +1,4 @@
-FROM jenkins:alpine
-
+FROM  jenkinsci/jenkins:2.150.1-alpine
+USER root
+RUN apk update
+RUN apk add python
